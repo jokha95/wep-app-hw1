@@ -1,22 +1,22 @@
 
   
-// // // //implement vector 
-class vector {
+// implement vector 
+class Vector {
     constructor(x,y){
         this.x = x;
         this.y = y;
 
     }
     add(value){
-        return new vector (this.x + value.x , this.y + value.y)
+        return new Vector (this.x + value.x , this.y + value.y)
         
     }
     subtraction(value){
-        return new vector (this.x - value.x , this.y - value.y)
+        return new Vector (this.x - value.x , this.y - value.y)
         
     }
     multiplication(value){
-        return (this.x * value.x , this.y * value.y)
+        return new Vector (this.x * value.x , this.y * value.y)
         
     }  
     length(){
@@ -28,15 +28,15 @@ class vector {
         
     }
     distance(){
-        return (this.x / this.length(), this.y / this.length());
+        return new Vector (this.x / this.length(), this.y / this.length());
         
     }
     
     
 }
 
-const a = new vector (22,33);
-const b = new vector (55,44);
+const a = new Vector (2,4);
+const b = new Vector (3,6);
 
 const sum = a.add(b);
 const sub = a.subtraction(b);
